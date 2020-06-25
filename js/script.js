@@ -1,3 +1,5 @@
 $(document).ready( function () {
-    $('#gestion').DataTable();
+    $('#gestion').DataTable({
+        "ajax": "data.php"
+    });
 } );
