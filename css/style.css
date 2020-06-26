@@ -23,7 +23,6 @@ body{
 	border-radius: 6px;
 }
 
-
 /*** HEADER ***/
 header{
     background-image: url('../images/header.png');
@@ -65,16 +64,12 @@ header{
     padding: 45px 0;
 }
 .tableau-container{
-    width: 50vw;
+    width: 70vw;
     margin: auto;
     background-color: white;
     padding: 25px 0;
     border-radius: 10px;
     box-shadow: 1px 1px 7px #3b3b3b;
-}
-
-#gestion_wrapper{
-    padding-right: 25px;
 }
 
 .tableau #gestion_wrapper #gestion_length select{
@@ -108,8 +103,7 @@ header{
 }
 
 .dataTables_info{
-    font-weight: 600;
-    margin-top: 15px;
+    display: none;
 }
 
 .dataTables_paginate{
@@ -166,6 +160,23 @@ table.dataTable tbody td{
 
 table.dataTable.no-footer{
     border: none;
+}
+
+#gestion tbody td:last-child a{
+    background-color: #017EFD;
+    color: white;
+    text-decoration: none;
+    border-radius: 15px;
+    padding: 4px 10px;
+    box-shadow: 1px 1px 7px grey;
+}
+
+#gestion tbody tr:nth-child(even) {
+    background-color: #DEEDFC;
+}
+
+ #gestion tbody tr:nth-child(odd) {
+    background-color: white;
 }
 
 /*** FOOTER ***/
