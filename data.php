@@ -1,6 +1,6 @@
 <?php
 include 'Classes/PHPExcel/IOFactory.php';
-$inputFileName = 'ajax\file_example_XLS_5000.xls';
+$inputFileName = 'ajax/file_example_XLS_5000.xls';
 
 $objPHPExcel = PHPExcel_IOFactory::load($inputFileName);
 
