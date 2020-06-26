@@ -1,4 +1,229 @@
-.f32 .flag {
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Lucida Grande', 'Lucida Sans Regular', 'Lucida Sans', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/******** SCROLLBAR ********/
+
+::-webkit-scrollbar /* taille de la scrollbar*/
+{
+	width: 5px;
+}
+
+::-webkit-scrollbar-track
+{
+	background-color: #ebeeed;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: #017EFD;
+	border-radius: 6px;
+}
+
+
+/*** HEADER ***/
+header{
+    background-image: url('../images/header.png');
+    height: 80px;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+.header-background{
+    background-image: url('../images/background-header.jpg');
+    height: 30vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 15px;
+}
+
+.overlayHeader{
+    height: 30vh;
+    background-color: rgba(0, 0, 0, 0.45);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header-background h1{
+    text-align: center;
+    color: white;
+    letter-spacing: 5px;
+    font-size: 40px;
+}
+
+/*** BODY ***/
+.tableau{
+    background-color: #555955;
+    padding: 45px 0;
+}
+.tableau-container{
+    width: 50vw;
+    margin: auto;
+    background-color: white;
+    padding: 25px 0;
+    border-radius: 10px;
+    box-shadow: 1px 1px 7px #3b3b3b;
+}
+
+#gestion_wrapper{
+    padding-right: 25px;
+}
+
+.tableau #gestion_wrapper #gestion_length select{
+    background-color: #C4C4C4;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 2px grey;
+    margin: 0 7px;
+}
+
+.tableau #gestion_wrapper #gestion_length label{
+    font-weight: 900;
+}
+
+#gestion_length, .dataTables_info{
+    margin-left: 20px;
+}
+
+.dataTables_filter{
+    margin-right: 20px;
+    margin-bottom: 50px;
+}
+
+.dataTables_filter input{
+    background-color: #C4C4C4;
+    border: none;
+    border-radius: 10px;
+    padding: 2px 0px;
+    box-shadow: 0 1px 6px grey;
+}
+
+.dataTables_info{
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.dataTables_paginate{
+    margin: 15px 20px 0 0 ;
+}
+
+.paginate_button{
+    background-color: transparent;
+    border: none;
+    font-weight: 600;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current{
+    border: none !important;
+    background: none !important;
+    background-color: #017EFD !important;
+    border-radius: 50% !important;
+    color: white !important;
+    box-shadow: 0 0px 11px grey;
+    width: 39px;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover{
+    color: white !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button{
+    color: black !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover{
+    border: none;
+    background: none;
+    color: black !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled,
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover{
+    color: #D0D0D0 !important;
+}
+
+table.dataTable thead th{
+    border: none;
+}
+
+#gestion{
+    margin-top: 15px;
+}
+
+table.dataTable tbody td{
+    text-align:center;
+    padding: 19px 0;
+}
+
+table.dataTable.no-footer{
+    border: none;
+}
+
+/*** FOOTER ***/
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+footer div {
+    width: 30%;
+}
+footer > div > h3 {
+    text-align: center;
+    margin-top: 45px;
+}
+.img-fluid {
+    width: 40%;
+}
+footer > div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav_liens_utiles {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+.nav_liens_utiles > a {
+    width: 50%;
+    margin-bottom: 4%;
+    color: black;
+    text-decoration: none;
+}
+footer > div:nth-child(3) span img {
+    width: 25px;
+}
+footer > div:last-child > p {
+    display: flex;
+    align-items: center;
+}
+.mr-2 {
+    margin-right: 2%;
+}
+.contact-footer{
+    margin-bottom: 20px;
+}
+.liens-utiles h3{
+    margin: 45px 30px 30px -27px;
+}
+footer > div:last-child p {
+    padding: 0 15%;
+}
+  .f32 .flag {
     vertical-align: middle;
     margin: -8px 0;
 }
