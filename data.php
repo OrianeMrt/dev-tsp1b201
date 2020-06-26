@@ -20,3 +20,4 @@ header('Content-Type: application/json');
 $response = new stdClass();
 $response->data = $datas;
 echo json_encode($response);
+// phpinfo();
