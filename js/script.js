@@ -32,7 +32,15 @@ $(document).ready( function () {
                 } else {
                     return data;
                 }
-            }
-         } ]
+            }],
+        searchPanes: {
+            panes: [
+                {
+                    header:'Custom',
+                }
+            ],
+            layout: 'columns-4',
+        },
+        dom: 'Pfrtip',
     });
 } );
