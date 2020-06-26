@@ -10,6 +10,15 @@ $(document).ready( function () {
         }, {
             targets : 0,
             visible : false
-        } ]
+        } ],
+        searchPanes: {
+            panes: [
+                {
+                    header:'Custom',
+                }
+            ],
+            layout: 'columns-4',
+        },
+        dom: 'Pfrtip',
     });
 } );
