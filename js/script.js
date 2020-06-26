@@ -32,6 +32,7 @@ $(document).ready( function () {
                 } else {
                     return data;
                 }
+            }
             }],
         searchPanes: {
             panes: [
