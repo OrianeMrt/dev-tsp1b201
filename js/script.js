@@ -6,12 +6,12 @@ $(document).ready( function () {
             data: null,
             render: function ( data ) {
                 return '<a href="https://www.commune-rosieres10.fr/Recherche?id_article='+data[data.length -1]+'">'+data[data.length -1]+'</a>';
-              }
+            }
         }, {
             targets : 0,
             visible : false
         },
-        { 
+        {
             targets: 4,
             className: 'f32',
             render : function(data) {
@@ -33,15 +33,26 @@ $(document).ready( function () {
                     return data;
                 }
             }
-            }],
+        }, {
+            searchPanes: {
+                show: false,
+            },
+            targets: [7],
+        }],
         searchPanes: {
-            panes: [
-                {
-                    header:'Custom',
-                }
-            ],
-            layout: 'columns-4',
+            layout: 'columns-3',
         },
-        dom: 'Pfrtip',
+        buttons:[
+            'searchPanes'
+        ],
+        dom: 'Bfrtip',
+        "initComplete": function(settings, json) {
+            console.log('Initialisation terminée');
+            $('a#gestion_previous').html('Précédent');
+            $('a#gestion_next').html('Suivant');
+        }
     });
+    $('button.dt-button').html('Filtrer');
+    $('a.paginate_button.previous').html('Précédent');
+    $('a.paginate_button.next').html('Suivant');
 } );
