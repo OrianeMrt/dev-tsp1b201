@@ -72,26 +72,34 @@ header{
     box-shadow: 1px 1px 7px #3b3b3b;
 }
 
-.tableau #gestion_wrapper #gestion_length select{
-    background-color: #C4C4C4;
-    border: none;
-    color: white;
-    border-radius: 10px;
-    box-shadow: 0 0 2px grey;
-    margin: 0 7px;
+.tableau .dt-buttons > button,
+.tableau .dt-buttons > button:focus,
+.tableau  .dt-buttons > button:active,
+.tableau .dt-buttons > button:hover{
+    border: none !important;
+    background: none !important;
+    background-color: #C4C4C4 !important;
+    border: none !important;
+    color: white !important;
+    border-radius: 20px !important;
+    box-shadow: 0 0 4px grey !important;
+    margin: 0 20px !important;
 }
 
-.tableau #gestion_wrapper #gestion_length label{
-    font-weight: 900;
-}
-
-#gestion_length, .dataTables_info{
-    margin-left: 20px;
+.dt-button-collection{
+    position: fixed !important;
+    top: 50% !important;
+    left: 15% !important;
 }
 
 .dataTables_filter{
     margin-right: 20px;
     margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.dataTables_filter label{
+    font-weight: 600;
 }
 
 .dataTables_filter input{
@@ -124,6 +132,9 @@ header{
     color: white !important;
     box-shadow: 0 0px 11px grey;
     width: 39px;
+    height: 39px;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover{
@@ -151,6 +162,7 @@ table.dataTable thead th{
 
 #gestion{
     margin-top: 15px;
+    width: 100% !important;
 }
 
 table.dataTable tbody td{
