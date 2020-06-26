@@ -12,7 +12,6 @@ foreach($sheet->getRowIterator() as $row) {
     foreach($row->getCellIterator() as $cell){
         $tempoData[] = (string) $cell->getValue();
     }
-    array_shift($tempoData);
     $datas[] = $tempoData;
 }
 array_shift($datas);
